@@ -4,7 +4,7 @@ A universal adapter for CNAME to HTTP(S) redirects. Use either raw domain names 
 It's writtin in using Cpp-HTTPd in order to achieve high performance, but it can be implemented in any language.
 
 ## Usage
-* Set your DNS A record for `*.r.devd.pw` to the CName301 instance
+* Set your DNS with a wildcard A record  (e.g. `*.r.devd.pw`) to the CName301 instance
   * Skip this if you already have a CName301 instance
 * Then you can use it by setting a DNS CNAME record to `{redirect-domain}.r.devd.pw` (e.g. `devdroplets.com.r.devd.pw`)
   * If you want to use a full URL encode it to hex first
